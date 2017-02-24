@@ -27,4 +27,12 @@ public abstract class Page {
     // Log.info("clicking on element " + element + "");
     element.click();
   }
+
+  public void setElementText(WebElement element, String text) {
+    element.click();
+    element.clear();
+    //Log.info("entering text '" + text + "' into element " + element);
+    element.sendKeys(text);
+    // Assert.assertEquals(element.getAttribute("value"), text);
+  }
 }
